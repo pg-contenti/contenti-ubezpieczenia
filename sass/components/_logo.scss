@@ -2,10 +2,21 @@
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: $lettersColorGold;
+  color: $specialColor;
+  text-decoration: none;
+  border: none;
+}
+.logo__office-black {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $textColor;
   text-decoration: none;
   border: none;
 }

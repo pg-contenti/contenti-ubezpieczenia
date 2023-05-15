@@ -13,13 +13,12 @@
   }
   &__space {
     text-align: center;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
   }
 
   &__list {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 20px;
   }
 
   /*&__title {
@@ -143,7 +142,7 @@
 .about-contact {
   padding: 60px 0px;
   color: #fff;
-  background-color: $backgrandHeaderColor;
+  background-color: $silverColor;
   line-height: 1.7;
   border-bottom: 1px solid $borderColor;
 
@@ -155,23 +154,23 @@
   }
   &__space {
     text-align: center;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
   }
 
   &__list {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 20px;
   }
 
   &__title {
+    @extend %title;
     font-size: 24px;
     line-height: 1.18;
     text-align: center;
     padding-top: 3.75rem;
     padding-bottom: 1.875rem;
     margin: 0;
-    color: $lettersColorGold;
+    color: $backgrandHeaderColor;
 
     /*
     font-style: normal;
@@ -232,6 +231,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+      }
+      &__space {
+        text-align: center;
+        margin-bottom: 0;
       }
     }
   }

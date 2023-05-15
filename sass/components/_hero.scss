@@ -1,6 +1,6 @@
 .primary {
   background-color: $bgnColor;
-  background-image: url(../images/overly-mb.jpg),
+  background-image: url(../images/overly-mb),
     linear-gradient(90deg, $backgroundImageColor 0%, $backgroundImageColor 0%);
   background-repeat: no-repeat;
   background-position: center;
@@ -8,19 +8,19 @@
   filter: drop-shadow (0px 4px 4px $shadowColor);
   text-align: center;
   border: 1px solid transparent;
-  padding: 5.875rem 0;
-  display: flex;
+  padding-top: 50px; 
+    display: flex;
   border-bottom: 1px solid $borderColor;
+  height: 280px;
 
   &__title {
     font-weight: 700;
     font-size: 30px;
-    line-height: 1.36;
-    font-style: italic;
+    line-height: 3;
     letter-spacing: 0.06em;
     text-align: center;
-    color: $lettersColorGold;
-    padding-bottom: 20px;
+    color: $backgroundImageColor;
+    
   }
 
   &__buttom {
@@ -56,20 +56,26 @@
   .primary {
     background-image: url(../images/overly-mb.jpg);
     /*background-image: url(../images/header-img-tablet.jpg);*/
+    
+
+    &__title {
+      font-size: 30px;
   }
+}
 }
 
 @media screen and (min-width: 1200px) {
   .primary {
     background-image: url(../images/overly-mb.jpg);
     /*background-image: url(../images/header-img-desctop.jpg);*/
-    padding: 200px 0;
+    padding-top: 120px;
+    padding-bottom: 280px;
 
     &__title {
       font-size: 2.75rem;
       line-height: 1.36;
       text-transform: italic;
-      color: $lettersColorGold;
+      color: $backgroundImageColor;
     }
   }
 }

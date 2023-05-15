@@ -10,6 +10,7 @@
     padding-top: 3.75rem;
     padding-bottom: 1.875rem;
     margin: 0;
+    color: $backgrandHeaderColor;
   }
   &__flex {
     display: flex;
@@ -18,8 +19,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     list-style-type: none;
-    margin-bottom: 3.75rem;
-    gap: 1.875rem;
+    padding-bottom: 60px;
+    gap: 50px;
   }
 
   &__card {
@@ -27,8 +28,8 @@
     background-color: $whiteColor;
     box-shadow: $boxShadow;
     border-radius: 0.25px 0.25px 0.25rem 0.25rem;
-
     border-color: $lettersColorGold;
+    height: 320px;
 
     &:hover,
     &:focus,
@@ -42,7 +43,6 @@
   &__name {
     width: 100%;
     line-height: 1.14;
-    text-transform: uppercase;
     color: $whiteColor;
     background-color: $backgrandHeaderColor;
     font-weight: 500;
@@ -50,7 +50,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     justify-content: center;
-    margin-bottom: 0.625rem;
+    margin-bottom: 15px;
     padding-top: 27px;
     padding-bottom: 27px;
     z-index: 1;
@@ -58,13 +58,11 @@
   }
 
   &__job {
-    display: none;
     font-weight: 400px;
     font-size: 1rem;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: $paragraphColor;
-    margin-bottom: 1rem;
   }
 
   &__box {
@@ -83,7 +81,7 @@
 
 @media screen and (min-width: 768px) {
   .team {
-    padding-bottom: 1.875rem;
+    /*padding-bottom: 1.86rem;*/
 
     &__flex {
       display: flex;
@@ -93,19 +91,19 @@
       list-style-type: none;
       margin-bottom: 0;
       gap: 0;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     &__card {
-      margin-bottom: 1.875rem;
+      margin-bottom: 1.86rem;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team {
-    padding-bottom: 5.875rem;
+    /*padding-bottom: 5.875rem;*/
 
     &__title {
       font-size: 26px;
@@ -129,7 +127,12 @@
 
     &__flex {
       flex-wrap: nowrap;
-      gap: 1.875rem;
+      gap: 1.35rem;
+    }
+
+    &__card {
+      margin-bottom: 1.86rem;
+      height: 235px;
     }
   }
 }

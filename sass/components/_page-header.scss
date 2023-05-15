@@ -2,7 +2,7 @@
   border-bottom: 1px solid $borderColor;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: $backgrandHeaderColor;
+  background-color: #f5f4fa;
 
   &__box {
     display: flex;
@@ -45,7 +45,8 @@
     &__nav {
       text-decoration: none;
       cursor: $cursor;
-      color: $lettersColorGold;
+      color: $paragraphColor;
+      font-weight: 500;
 
       &:hover,
       &:focus {
@@ -112,6 +113,7 @@
 
     &__nav--active {
       color: $silverColor;
+      font-weight: 500;
 
       &:after {
         content: "";
@@ -181,7 +183,7 @@
   &__icon {
     width: 45px;
     height: 45px;
-    fill: $lettersColorGold;
+    fill: $specialColor;
     transition: fill 0.25s;
     display: block;
   }
