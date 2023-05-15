@@ -8,19 +8,19 @@
   filter: drop-shadow (0px 4px 4px $shadowColor);
   text-align: center;
   border: 1px solid transparent;
-  padding-top: 50px; 
-    display: flex;
+  padding-top: 50px;
+  display: flex;
   border-bottom: 1px solid $borderColor;
   height: 280px;
 
   &__title {
+    visibility: hidden;
     font-weight: 700;
     font-size: 30px;
     line-height: 3;
     letter-spacing: 0.06em;
     text-align: center;
     color: $backgroundImageColor;
-    
   }
 
   &__buttom {
@@ -56,12 +56,11 @@
   .primary {
     background-image: url(../images/overly-mb.jpg);
     /*background-image: url(../images/header-img-tablet.jpg);*/
-    
 
     &__title {
       font-size: 30px;
+    }
   }
-}
 }
 
 @media screen and (min-width: 1200px) {

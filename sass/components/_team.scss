@@ -104,7 +104,8 @@
 @media screen and (min-width: 1200px) {
   .team {
     /*padding-bottom: 5.875rem;*/
-
+    padding-left: 30px;
+    padding-right: 30px;
     &__title {
       font-size: 26px;
       line-height: 1.16;
@@ -126,13 +127,19 @@
     }
 
     &__flex {
-      flex-wrap: nowrap;
-      gap: 1.35rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      list-style-type: none;
+      margin-bottom: 0;
+      gap: 21px;
     }
 
     &__card {
       margin-bottom: 1.86rem;
-      height: 235px;
+      height: 290px;
+      width: 240px;
     }
   }
 }
