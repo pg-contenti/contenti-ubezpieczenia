@@ -62,12 +62,21 @@
     font-size: 1rem;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: $paragraphColor;
+    color: $specialColor;
   }
 
   &__box {
     @extend %box;
     justify-content: center;
+  }
+
+  &__folder {
+    font-weight: 400px;
+    font-size: 1rem;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $paragraphColor;
+    cursor: $cursor;
   }
 
   &__icon {
@@ -97,6 +106,14 @@
 
     &__card {
       margin-bottom: 1.86rem;
+    }
+    &__folder {
+      font-weight: 400px;
+      font-size: 1rem;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+      color: $paragraphColor;
+      cursor: $cursor;
     }
   }
 }
@@ -140,6 +157,14 @@
       margin-bottom: 1.86rem;
       height: 290px;
       width: 240px;
+    }
+    &__folder {
+      font-weight: 400px;
+      font-size: 1rem;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+      color: $paragraphColor;
+      cursor: $cursor;
     }
   }
 }
